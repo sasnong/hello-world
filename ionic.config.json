@@ -1,0 +1,8 @@
+{
+  "name": "Hello World",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue",
+  "id": "4d17c0b7"
+}
