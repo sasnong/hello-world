@@ -4,7 +4,7 @@
         {
             "appId": "4d17c0b7",
             "root": "/builds/sasnong/hello-world",
-            "dependencyInstallCommand": "apt-get update -y && apt-get -y install xvfb && apt-get -y install libgtk-3-0 && apt-get -y install libxss1 && npm install"
+            "dependencyInstallCommand": "apt-get update -y && apt-get -y install xvfb libgtk-3-0 libxss1 libasound2 && npm install"
         }
     ]
 }
