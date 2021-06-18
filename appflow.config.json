@@ -4,7 +4,7 @@
         {
             "appId": "4d17c0b7",
             "root": "/builds/sasnong/hello-world",
-            "dependencyInstallCommand": "apt-get update -y && apt-get -y install xvfb"
+            "dependencyInstallCommand": "apt-get update -y && apt-get -y install xvfb && npm install"
         }
     ]
 }
