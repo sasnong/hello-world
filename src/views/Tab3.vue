@@ -8,10 +8,9 @@
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Tab 3</ion-title>
+          <ion-title size="large" :class="getPatientTierClass('vip')">Tab 3</ion-title>
         </ion-toolbar>
       </ion-header>
-      
       <ExploreContainer name="Tab 3 page" />
     </ion-content>
   </ion-page>
@@ -20,9 +19,17 @@
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
+import {getPatientTierClass} from "@/views/test";
 
 export default  {
   name: 'Tab3',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
+  setup() {
+    return {
+      getPatientTierClass
+    };
+  }
 }
+
+
 </script>
